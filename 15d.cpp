@@ -1,19 +1,18 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main(){
 	int n,x;
-	cin >> n;
+	scanf("%d",&n);
 
 	for(int i = 1; i<= n; i++)
 	{
 		if(i%3 == 0){
-			cout << i;
+			printf(" %d",i);
 		}else{
 			x = i;
 			do{
 				if(x%10 == 3){
-					cout << i;
+					printf(" %d",i);
 					break;
 				}
 				x /=10;
